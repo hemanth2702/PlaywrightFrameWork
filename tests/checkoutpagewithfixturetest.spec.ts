@@ -3,8 +3,9 @@ import { readExcelFileSheetwise } from "../src/utilities/ExcelFileReading.js";
 
 
 test.beforeEach(async({loginPage, inventoryPage, cartPage})=>{
-let data = readExcelFileSheetwise("loginData",0);
-await loginPage.doLogin(data.username,data.password);
+// let data = readExcelFileSheetwise("loginData",0);
+// await loginPage.doLogin(data.username,data.password);
+await loginPage.doLogin(process.env.APPUSERNAME!,process.env.APPPASSWORD!);
 //await inventoryPage.waitUtil();
 let ivnPagedata = readExcelFileSheetwise("inventoryPage",0);
 await inventoryPage.addProductIntoCart(ivnPagedata.productname1);

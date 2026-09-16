@@ -19,8 +19,9 @@ test("test for validating title of the page",async({loginPage})=>{
 
 
 test("test for login functionality with valid credentials",async({loginPage,page})=>{
-    let data = readExcelFileSheetwise("loginData",0);
-await loginPage.doLogin(data.username,data.password);
+//     let data = readExcelFileSheetwise("loginData",0);
+// await loginPage.doLogin(data.username,data.password);
+await loginPage.doLogin(process.env.APPUSERNAME!,process.env.APPPASSWORD!);
 await expect(page).toHaveURL(/inventory/);
 console.log("user logedin successfully and navigated to inventory page");
 

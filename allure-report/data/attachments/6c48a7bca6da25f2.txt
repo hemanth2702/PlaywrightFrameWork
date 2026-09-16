@@ -1,0 +1,1 @@
+user logedin successfully and navigated to inventory page
