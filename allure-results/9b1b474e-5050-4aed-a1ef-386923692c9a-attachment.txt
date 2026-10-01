@@ -1,0 +1,28 @@
+new booking id created: {
+  bookingid: 2783,
+  booking: {
+    firstname: 'Jim',
+    lastname: 'Brown',
+    totalprice: 111,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-09-16', checkout: '2026-09-16' },
+    additionalneeds: 'Breakfast'
+  }
+}
+New booking created with id: 2783
+Get:get the booking details
+{
+  firstname: 'Jim',
+  lastname: 'Brown',
+  totalprice: 111,
+  depositpaid: true,
+  bookingdates: { checkin: '2026-09-16', checkout: '2026-09-16' },
+  additionalneeds: 'Breakfast'
+}
+{ token: '98e5abc266dec2f' }
+Token generated:98e5abc266dec2f
+status code is: 201
+status messsage is:  Created
+Get: Get the booking details...
+Not Found
+record is deleted! soNot Found

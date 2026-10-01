@@ -1,0 +1,32 @@
+{
+  bookingid: 3624,
+  booking: {
+    firstname: 'Jim',
+    lastname: 'Brown',
+    totalprice: 111,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-09-16', checkout: '2026-09-16' },
+    additionalneeds: 'Breakfast'
+  }
+}
+New booking created with bookingid:3624
+Get the booking details using id: 3624
+{
+  firstname: 'Jim',
+  lastname: 'Brown',
+  totalprice: 111,
+  depositpaid: true,
+  bookingdates: { checkin: '2026-09-16', checkout: '2026-09-16' },
+  additionalneeds: 'Breakfast'
+}
+{ token: 'd9fa6cbc392dc45' }
+Token generated: d9fa6cbc392dc45
+Updated booking is:  {
+  firstname: 'James',
+  lastname: 'Brown',
+  totalprice: 111,
+  depositpaid: true,
+  bookingdates: { checkin: '2018-01-01', checkout: '2019-01-01' },
+  additionalneeds: 'Breakfast'
+}
+current booking is updated successfully!

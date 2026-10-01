@@ -1,0 +1,22 @@
+New booking id created:  {
+  bookingid: 1293,
+  booking: {
+    firstname: 'Jim',
+    lastname: 'Brown',
+    totalprice: 111,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-09-16', checkout: '2026-09-16' },
+    additionalneeds: 'Breakfast'
+  }
+}
+New booking id created with id:  1293
+Get: get the booking details...
+{
+  firstname: 'Jim',
+  lastname: 'Brown',
+  totalprice: 111,
+  depositpaid: true,
+  bookingdates: { checkin: '2026-09-16', checkout: '2026-09-16' },
+  additionalneeds: 'Breakfast'
+}
+Token generated: undefined
