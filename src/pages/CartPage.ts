@@ -17,7 +17,7 @@ private readonly cartoption
         super(page);
         this.productName=page.locator("div.inventory_item_name");
         this.removeButton=page.getByRole('button',{name:'Remove'});
-        this.continueShoppingBtn=page.getByRole('button',{name:"Go back Continue Shopping"});
+        this.continueShoppingBtn=page.locator("button#continue-shopping");
         this.checkoutButton=page.getByRole('button',{name:"Checkout"});
         this.cartoption = page.locator("a.shopping_cart_link");
     }

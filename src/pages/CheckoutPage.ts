@@ -19,7 +19,7 @@ export class CheckoutPage extends BasePage
         this.lastName=page.getByRole('textbox',{name:'Last Name'});
         this.postalCode=page.getByRole('textbox',{name:'Zip/Postal Code'});
         this.continueButton=page.getByRole('button',{name:'Continue'});
-        this.cancelButton=page.getByRole('button',{name:'Go back Cancel'});
+        this.cancelButton=page.locator("button#cancel");
     }
 
     //methods

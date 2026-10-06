@@ -1,0 +1,107 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: api\TC010_APIAuthorizationAlgorithm.spec.ts >> test for bearer token
+- Location: tests\api\TC010_APIAuthorizationAlgorithm.spec.ts:60:5
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 201
+Received: 422
+```
+
+# Test source
+
+```ts
+  1  | //https://learning.postman.com/docs/use/send-requests/authorization/authorization-types#basic-auth
+  2  | 
+  3  | import {APIResponse, expect, test} from "@playwright/test";
+  4  | import {readingAPIpayload} from "../../src/utilities/readingAPI.js"
+  5  | 
+  6  | test("Test for NoAuth authentication algorithm",async({request})=>{
+  7  | 
+  8  |     const response:APIResponse = await request.get("https://jsonplaceholder.typicode.com/posts/1");
+  9  | 
+  10 |     //validate status code
+  11 |     expect(response.status()).toBe(200);
+  12 |     console.log("status code matched!"+ response.status());
+  13 |     
+  14 |     //get the response body
+  15 |     const jsonREs = await response.json();
+  16 |     console.log(jsonREs);
+  17 |     
+  18 | 
+  19 | })
+  20 | 
+  21 | test("Test for basic Authentication", async({request})=>{
+  22 | 
+  23 |     const username="postman";
+  24 |     const password="password";
+  25 | 
+  26 |     //encode data in base64: Buffer package
+  27 |     let bufferedIntobase64 = Buffer.from(`${username}:${password}`).toString("base64");
+  28 |     console.log(bufferedIntobase64);
+  29 | 
+  30 |     const response =await request.get("https://postman-echo.com/basic-auth",{headers:
+  31 |         {
+  32 |         Authorization:`Basic ${bufferedIntobase64}`
+  33 |     }
+  34 | });
+  35 | 
+  36 | console.log(response.status());
+  37 | console.log(await response.text());
+  38 | expect(response.status()).toBe(200);
+  39 | 
+  40 | 
+  41 |     
+  42 | })
+  43 | 
+  44 | 
+  45 | test("Test for API key",async({request})=>{
+  46 | 
+  47 | //get api key from https://app.reqres.in/dashboard
+  48 |     const apiKey="reqres_5c0527b3b9704e00bf7cff72876ec269";
+  49 | 
+  50 | const response = await request.get("https://reqres.in/api/users?page=2", {headers:{
+  51 |     'x-api-key':`${apiKey}`
+  52 | }});
+  53 | 
+  54 | expect(response.status()).toBe(200);
+  55 | console.log(await response.json());
+  56 | 
+  57 | 
+  58 | })
+  59 | 
+  60 | test("test for bearer token",async({request})=>{
+  61 | 
+  62 |     const token = process.env.ACCESSTOKEN!;
+  63 | 
+  64 |     //let payload = await readingAPIpayload("gorestdata");
+  65 | 
+  66 |     let email ="Hemanth"+new Date().getTime()+"@gmail.com";
+  67 |     let payload = {
+  68 |          "name":"Hemanth",
+  69 |     "email":"test2026@gmail.com",
+  70 |     "gender":"male",
+  71 |     "status":"active"
+  72 |     }
+  73 | 
+  74 |     const response = await request.post("https://gorest.co.in/public/v2/users",{headers:{
+  75 |         Authorization: `Bearer ${token}`
+  76 |     },data:payload});
+  77 | 
+> 78 | expect(response.status()).toBe(201);
+     |                           ^ Error: expect(received).toBe(expected) // Object.is equality
+  79 | 
+  80 | console.log(await response.json());
+  81 | 
+  82 | })
+```

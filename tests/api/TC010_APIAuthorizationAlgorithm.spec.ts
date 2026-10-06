@@ -66,7 +66,7 @@ test("test for bearer token",async({request})=>{
     let email ="Hemanth"+new Date().getTime()+"@gmail.com";
     let payload = {
          "name":"Hemanth",
-    "email":"test2026@gmail.com",
+    "email":email,
     "gender":"male",
     "status":"active"
     }

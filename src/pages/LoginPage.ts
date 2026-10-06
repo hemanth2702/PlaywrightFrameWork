@@ -22,7 +22,7 @@ export class LoginPage extends BasePage
         this.userName=page.getByPlaceholder("Username");
         this.password=page.getByPlaceholder("Password");
         this.loginButton=page.getByRole('button',{name:"Login"});
-        this.errorheading=page.getByRole('heading',{level:3});
+        this.errorheading=page.locator("//h3[@data-test='error']");
     }
 
     //methods(action)

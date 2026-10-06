@@ -1,0 +1,7 @@
+----footer link details----
+link attribute value: https://x.com/saucelabs
+link text is: X
+link attribute value: https://www.facebook.com/saucelabs
+link text is: Facebook
+link attribute value: https://www.linkedin.com/company/sauce-labs/
+link text is: LinkedIn
