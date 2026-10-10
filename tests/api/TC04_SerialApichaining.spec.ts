@@ -103,7 +103,7 @@ test.describe.serial("This is the suite for API chaining",()=>{
         console.log("updating partial record.....");
 
         //payload
-        let payload = await readingAPIpayload("patchData");
+        let payload = await readingAPIpayload("patchdata");
         let response = await request.patch(`${baseURL}/booking/${bookingId}`,{headers:{
             "Content-Type": "application/json",
              "Accept": "application/json",
