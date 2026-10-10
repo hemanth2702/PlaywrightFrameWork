@@ -7,7 +7,7 @@ let baseURL=process.env.API_URL!;
 
 test("POST Request: create new resource from filedata", async({request})=>{
 
-    let payload = JSON.parse(fs.readFileSync("src/apiData/postData.json",'utf-8')) //converts a javascript object notation (JSON) string into an object.
+    let payload = JSON.parse(fs.readFileSync("src/apiData/postdata.json",'utf-8')) //converts a javascript object notation (JSON) string into an object.
     let response:APIResponse = await request.post(`${baseURL}/booking`,{headers:{
         "Content-Type": "application/json"
 },data:payload}) //jsonobject --->JSON

@@ -46,7 +46,7 @@ async addProductIntoCart(pname:string)
    }
    //add the product into cart
    await this.addToCartButton.click();
-   console.log(pname+" :added into cart");
+   console.log(pname +" :added into cart");
    
 }
 

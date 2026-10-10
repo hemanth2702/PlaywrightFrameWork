@@ -84,7 +84,7 @@ test.describe.serial("This is the suite for API chaining",()=>{
         console.log("updating full record....");
 
         //payload
-        let payload = await readingAPIpayload("putData");
+        let payload = await readingAPIpayload("putdata");
         let response = await request.put(`${baseURL}/booking/${bookingId}`,{headers:{
             "Content-Type": "application/json",
             "Accept": "application/json",
