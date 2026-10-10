@@ -17,7 +17,7 @@ constructor(page:Page)
     super(page)
         this.productList=page.locator("div.inventory_container div.inventory_item_name ");
         this.footerLinks=page.locator("footer a");
-        this.addToCartButton=page.getByRole('button',{name:'Add to cart'});
+        this.addToCartButton=page.getByText("Add to cart")
         this.cartOption=page.locator("a.shopping_cart_link");
 }
 
@@ -43,6 +43,7 @@ async addProductIntoCart(pname:string)
         await Product.click();
         break;
     }
+    await this.page.waitForTimeout(1500);
    }
    //add the product into cart
    await this.addToCartButton.click();

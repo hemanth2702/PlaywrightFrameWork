@@ -990,5 +990,181 @@
     12361
    ]
   }
+ },
+ {
+  "time": 1791636051836,
+  "duration": 37948.638999999996,
+  "passed": 21,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 21,
+  "label": "local",
+  "tests": {
+   "ui::tests/cartpagewithfixturetest.spec.ts::test for cart page launch": [
+    "p",
+    6256
+   ],
+   "ui::tests/cartpagewithfixturetest.spec.ts::test for getcart product details": [
+    "p",
+    6100
+   ],
+   "ui::tests/cartpagewithfixturetest.spec.ts::test for remove product": [
+    "p",
+    6055
+   ],
+   "ui::tests/cartpagewithfixturetest.spec.ts::test for continue shopping and add new product into cart": [
+    "p",
+    7830
+   ],
+   "ui::tests/cartpagewithfixturetest.spec.ts::test validate chcekout page launch": [
+    "p",
+    2157
+   ],
+   "ui::tests/checkoutpagewithfixturetest.spec.ts::test for valid checkout process": [
+    "p",
+    2601
+   ],
+   "ui::tests/checkoutpagewithfixturetest.spec.ts::test for cancel checkout process": [
+    "p",
+    2539
+   ],
+   "ui::tests/inventorypagewithfixture.spec.ts::test for product count match": [
+    "p",
+    4917
+   ],
+   "ui::tests/inventorypagewithfixture.spec.ts::to validate product details": [
+    "p",
+    4601
+   ],
+   "ui::tests/inventorypagewithfixture.spec.ts::test for add product into cart": [
+    "p",
+    4253
+   ],
+   "ui::tests/inventorypagewithfixture.spec.ts::test for total footers count validation": [
+    "p",
+    4261
+   ],
+   "ui::tests/inventorypagewithfixture.spec.ts::test for get footers details": [
+    "p",
+    4962
+   ],
+   "ui::tests/loginpagetestwithfixture.spec.ts::test for validating the url": [
+    "p",
+    4424
+   ],
+   "ui::tests/loginpagetestwithfixture.spec.ts::test for validating title of the page": [
+    "p",
+    4187
+   ],
+   "ui::tests/loginpagetestwithfixture.spec.ts::test for login functionality with valid credentials": [
+    "p",
+    4473
+   ],
+   "ui::tests/loginpagetestwithfixture.spec.ts::test for invalid login functionality username and pwd is blank": [
+    "p",
+    4065
+   ],
+   "ui::tests/loginpagetestwithfixture.spec.ts::test for invalid data for login 1": [
+    "p",
+    5532
+   ],
+   "ui::tests/loginpagetestwithfixture.spec.ts::test for invalid data for login 2": [
+    "p",
+    4977
+   ],
+   "ui::tests/loginpagetestwithfixture.spec.ts::test for invalid data for login 3": [
+    "p",
+    4875
+   ],
+   "ui::tests/loginpagetestwithfixture.spec.ts::test for invalid data for login 4": [
+    "p",
+    1852
+   ],
+   "ui::tests/overviewpagewithfixturetest.spec.ts::test for complete checkout process": [
+    "p",
+    2535
+   ]
+  }
+ },
+ {
+  "time": 1791638598712,
+  "duration": 8413.430999999999,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "label": "local",
+  "tests": {
+   "chromium::tests/cartpagewithfixturetest.spec.ts::test for remove product": [
+    "p",
+    4791
+   ],
+   "ui::tests/cartpagewithfixturetest.spec.ts::test for remove product": [
+    "p",
+    4952
+   ]
+  }
+ },
+ {
+  "time": 1791638647527,
+  "duration": 54871.258,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "label": "local",
+  "tests": {
+   "chromium::tests/cartpagewithfixturetest.spec.ts::test for remove product": [
+    "p",
+    4797
+   ],
+   "ui::tests/cartpagewithfixturetest.spec.ts::test for remove product": [
+    "p",
+    5302
+   ]
+  }
+ },
+ {
+  "time": 1791639270760,
+  "duration": 7339.472,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "label": "local",
+  "tests": {
+   "chromium::tests/inventorypagewithfixture.spec.ts::test for add product into cart": [
+    "p",
+    3174
+   ],
+   "ui::tests/inventorypagewithfixture.spec.ts::test for add product into cart": [
+    "p",
+    3122
+   ]
+  }
+ },
+ {
+  "time": 1791646253705,
+  "duration": 10311.229,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "label": "local",
+  "tests": {
+   "chromium::tests/inventorypagewithfixture.spec.ts::test for add product into cart": [
+    "p",
+    6386
+   ],
+   "ui::tests/inventorypagewithfixture.spec.ts::test for add product into cart": [
+    "p",
+    6785
+   ]
+  }
  }
 ]
